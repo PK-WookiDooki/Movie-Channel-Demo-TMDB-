@@ -1,0 +1,10 @@
+export { default as MovieCard } from "./movieCard/MovieCard";
+export { default as Navbar } from "./navbar/Navbar";
+export { default as Loading } from "./loader/Loading";
+export { default as RGuard } from "./routeGuard/RouteGuard";
+export { default as Genres } from "./genres/Genres";
+export { default as MyCarousel } from "./carousel/MyCarousel";
+export { default as AMCarousel } from "./allMoviesCarousel/AMCarousel";
+export { default as Contact } from "./contact/Contact";
+export { default as RGMain } from "./routeGuard/RGMain";
+export { default as CP } from "./changePassword/ChangePassword";

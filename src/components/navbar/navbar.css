@@ -1,0 +1,43 @@
+.nav-link {
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
+.nav-link::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.4s;
+}
+.nav-link:hover::before,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active::before,
+.nav-link.active::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-link::before,
+  .nav-link::after {
+    border-bottom-color: white;
+  }
+}
